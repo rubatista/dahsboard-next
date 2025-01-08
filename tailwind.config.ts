@@ -9,8 +9,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        rubbSky:"#C3EBFA",
+        rubbSkyLight:"#EDF9FD",
+        rubbPurple:"#CFCEFF",
+        rubbPurpleLight:"#F1F0FF",
+        rubbYellow:"#FAE27C",
+        rubbYellowLight:"#FEFCE8"
       },
     },
   },
