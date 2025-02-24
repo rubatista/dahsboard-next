@@ -13,16 +13,16 @@ type Subject = {
 
 const columns = [
   {
-    header: "Subject Name", 
+    header: "Subject Name",
     accessor: "name"
   },
   {
-    header: "Teachers", 
-    accessor: "teachers", 
+    header: "Teachers",
+    accessor: "teachers",
     className: "hidden md:table-cell"
   },
   {
-    header: "Actions", 
+    header: "Actions",
     accessor: "actions"
   }
 ]
@@ -32,7 +32,7 @@ const SubjectList = () => {
   const renderRow = (item: Subject) => (
     <tr key={item.id} className="border-b border-gray-200 even:bg-slate-50 text-sm hover:bg-rubbPurpleLight">
       <td className="flex items-center gap-4 p-4">
-      <h3>{item.name}</h3>
+        <h3>{item.name}</h3>
       </td>
       <td className="hidden md:table-cell">{item.teachers.join(", ")}</td>
       <td>

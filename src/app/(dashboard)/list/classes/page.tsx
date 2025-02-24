@@ -15,26 +15,26 @@ type Classes = {
 
 const columns = [
   {
-    header: "Class Name", 
+    header: "Class Name",
     accessor: "name"
   },
   {
-    header: "Capacity", 
-    accessor: "capacity", 
+    header: "Capacity",
+    accessor: "capacity",
     className: "hidden md:table-cell"
   },
   {
-    header: "Grade", 
-    accessor: "grade", 
+    header: "Grade",
+    accessor: "grade",
     className: "hidden md:table-cell"
   },
   {
-    header: "Supervisor", 
-    accessor: "supervisor", 
+    header: "Supervisor",
+    accessor: "supervisor",
     className: "hidden lg:table-cell"
   },
   {
-    header: "Actions", 
+    header: "Actions",
     accessor: "actions"
   }
 ]
