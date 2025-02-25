@@ -13,7 +13,7 @@ type Result = {
   student: string;
   date: string;
   type: string;
-  score: string;
+  score: number;
 }
 
 const columns = [
@@ -23,8 +23,7 @@ const columns = [
   },
   {
     header: "Student", 
-    accessor: "student", 
-    className: "hidden md:table-cell"
+    accessor: "student",
   },
   {
     header: "Score", 
@@ -61,7 +60,7 @@ const ResultsList = () => {
       <td className="flex items-center gap-4 p-4">
         {item.subject}
       </td>
-      <td className="hidden md:table-cell">{item.student}</td>
+      <td>{item.student}</td>
       <td className="hidden md:table-cell">{item.score}</td>
       <td className="hidden lg:table-cell">{item.teacher}</td>
       <td className="hidden lg:table-cell">{item.class}</td>
